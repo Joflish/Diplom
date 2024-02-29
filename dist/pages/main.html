@@ -16,7 +16,7 @@
     <div class="title title-main center">
       <div class="title__logoinfo">
         <img class="logo" src="../img/logo.png" alt="" />
-        <img src="../img/burger-menu.png" alt="" />
+        <img class="burger-menu" src="../img/burger-menu.png" alt="" />
       </div>
       <div class="title__text">
         <h1 class="title__title">КАРЬЕРНЫЙ НАВИГАТОР «ОНИКС»</h1>
@@ -27,9 +27,14 @@
       </div>
     </div>
     <div class="descriptionPlatform">
-      <h1 class="descriptionPlatform__title">
-        Краткое описание нашей платформы
-      </h1>
+      <div class="descriptionPlatform__title">
+        <h1 class="descriptionPlatform__title">
+          Краткое описание <br />
+          нашей платформы
+        </h1>
+        <img src="../img/rezume.png" alt="" />
+      </div>
+
       <div class="descriptionTools">
         <div class="descriptionTools__box descriptionTools__complex">
           <h1 class="descriptionTools__title">Профориентационый комплекс</h1>
@@ -38,6 +43,7 @@
           </h2>
           <button class="descriptionTools__button" type="button">
             Прочитать подробнее о комплекса
+            <svg class="icon"><use href="#arrow"></use></svg>
           </button>
         </div>
         <div class="descriptionTools__box descriptionTools__summary">
@@ -48,6 +54,7 @@
           </h2>
           <button class="descriptionTools__button" type="button">
             Перейти к профориентационному тесту
+            <svg class="icon"><use href="#arrow"></use></svg>
           </button>
         </div>
         <div class="descriptionTools__box descriptionTools__test">
@@ -58,6 +65,7 @@
           </h2>
           <button class="descriptionTools__button" type="button">
             Перейти к конструктору резюме
+            <svg class="icon"><use href="#arrow"></use></svg>
           </button>
         </div>
       </div>
@@ -79,5 +87,31 @@
         </p>
       </div>
     </div>
+
+    <!-- Это умеет делать сборщик, но можно и руками -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      style="position: absolute; width: 0; height: 0"
+      id="__SVG_SPRITE_NODE__"
+    >
+      <!--    id , чтобы испльзовать где надо -->
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        fill-rule="evenodd"
+        viewBox="0 0 24 24"
+        id="arrow"
+      >
+        <!--  currentColor, чтобы можно было через CSS поменять цвет       -->
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 12h12m0 0-5-5m5 5-5 5"
+        />
+      </symbol>
+    </svg>
   </body>
 </html>

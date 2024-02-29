@@ -17,7 +17,7 @@
     <div class="title center">
       <div class="title__logoinfo">
         <img class="logo" src="./dist/img/logo.png" alt="" />
-        <p>
+        <p class="name__college">
           Государственное<br />
           бюджетное<br />
           профессиональное<br />
@@ -31,8 +31,9 @@
           Данный проект разработан для выпускников колледжа «ОНИКС»
         </h2>
         <a class="button__link" href="./dist/pages/main.html"
-          ><button class="title__button" type="button">
+          ><button class="title__button descriptionTools__button" type="button">
             Перейти на главную
+            <svg class="icon"><use href="#arrow"></use></svg>
           </button></a
         >
         <p class="title__developer">
@@ -45,5 +46,13 @@
         <p class="pinkBack perm2024">Пермь 2024</p>
       </div>
     </div>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     style="position: absolute; width: 0; height: 0" id="__SVG_SPRITE_NODE__">
+<!--    id , чтобы испльзовать где надо -->
+    <symbol xmlns="http://www.w3.org/2000/svg" fill="none" fill-rule="evenodd" viewBox="0 0 24 24" id="arrow">
+        <!--  currentColor, чтобы можно было через CSS поменять цвет       -->
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 12h12m0 0-5-5m5 5-5 5"/>
+    </symbol>
+</svg>
   </body>
 </html>
