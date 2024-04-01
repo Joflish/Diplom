@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Карьерный навигатор «ОНИКС»</title>
+    <link rel="icon" type="image/png" href="../img/logo.ico" />
     <link rel="stylesheet" href="../styles/style-main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,7 +33,7 @@
           Краткое описание <br />
           нашей платформы
         </h1>
-        <img src="../img/rezume.png" alt="" />
+        <img class="descriptionPlatform__img" src="../img/rezume.png" alt="" />
       </div>
 
       <div class="descriptionTools">
@@ -63,16 +64,18 @@
             удобный инструмент, помогающий создать резюме исходя из ваших
             навыков.
           </h2>
-          <button class="descriptionTools__button" type="button">
-            Перейти к конструктору резюме
-            <svg class="icon"><use href="#arrow"></use></svg>
-          </button>
+          <a href="../pages/rezume.html">
+            <button class="descriptionTools__button" type="button">
+              Перейти к конструктору резюме
+              <svg class="icon"><use href="#arrow"></use></svg>
+            </button>
+          </a>
         </div>
       </div>
     </div>
     <div class="footer">
       <div class="info">
-        <img class="logo" src="../img/logo.png" alt="" />
+        <img class="footer__logo" src="../img/logo.png" alt="" />
         <div class="footer__link_box">
           <a class="footer__link" href="#">Результат теста</a>
           <a class="footer__link" href="#">Конструктор резюме</a>
