@@ -16,8 +16,23 @@
   <body>
     <div class="title title-main center">
       <div class="title__logoinfo">
-        <img class="logo" src="../img/logo.png" alt="" />
-        <img class="burger-menu" src="../img/burger-menu.png" alt="" />
+        <a href="./main.html"><img class="logo" src="../img/logo.png" alt="" /></a>
+        <div class="burger-container">
+          <img
+            class="burger-menu"
+            src="../img/burger-menu.png"
+            alt="Burger Menu"
+          />
+          <div class="burger-links">
+            <a class="footer__link" href="../pages/rezume.html"
+              >Конструктор резюме</a
+            >
+            <a class="footer__link" href="../pages/test.html"
+              >Профориентационный тест</a
+            >
+            <a class="footer__link" href="#">Результат теста</a>
+          </div>
+        </div>
       </div>
       <div class="title__text">
         <h1 class="title__title">КАРЬЕРНЫЙ НАВИГАТОР «ОНИКС»</h1>
@@ -42,10 +57,12 @@
           <h2 class="descriptionTools__subtitle">
             набор методов, направленных на помощь в выборе профессии.
           </h2>
-          <button class="descriptionTools__button" type="button">
-            Прочитать подробнее о комплекса
-            <svg class="icon"><use href="#arrow"></use></svg>
-          </button>
+          <a href="#">
+            <button class="descriptionTools__button" type="button">
+              Прочитать подробнее о комплекса
+              <svg class="icon"><use href="#arrow"></use></svg>
+            </button>
+          </a>
         </div>
         <div class="descriptionTools__box descriptionTools__summary">
           <h1 class="descriptionTools__title">Профориентационый тест</h1>
@@ -53,10 +70,12 @@
             специальный онлайн-инструмент, который помогает определить ваши
             навыки.
           </h2>
-          <button class="descriptionTools__button" type="button">
-            Перейти к профориентационному тесту
-            <svg class="icon"><use href="#arrow"></use></svg>
-          </button>
+          <a href="../pages/test.html">
+            <button class="descriptionTools__button" type="button">
+              Перейти к профориентационному тесту
+              <svg class="icon"><use href="#arrow"></use></svg>
+            </button>
+          </a>
         </div>
         <div class="descriptionTools__box descriptionTools__test">
           <h1 class="descriptionTools__title">Конструктор резюме</h1>
@@ -78,8 +97,12 @@
         <img class="footer__logo" src="../img/logo.png" alt="" />
         <div class="footer__link_box">
           <a class="footer__link" href="#">Результат теста</a>
-          <a class="footer__link" href="#">Конструктор резюме</a>
-          <a class="footer__link" href="#">Профориентационный тест</a>
+          <a class="footer__link" href="../pages/rezume.html"
+            >Конструктор резюме</a
+          >
+          <a class="footer__link" href="../pages/test.html"
+            >Профориентационный тест</a
+          >
         </div>
       </div>
       <div class="footer__developer_box">

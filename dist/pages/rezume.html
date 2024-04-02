@@ -16,8 +16,21 @@
   <body>
     <div class="title title-main center">
       <div class="title__logoinfo">
-        <img class="logo" src="../img/logo.png" alt="" />
-        <img class="burger-menu" src="../img/burger-menu.png" alt="" />
+        <a href="./main.html"><img class="logo" src="../img/logo.png" alt="" /></a>
+        <div class="burger-container">
+          <img
+            class="burger-menu"
+            src="../img/burger-menu.png"
+            alt="Burger Menu"
+          />
+          <div class="burger-links">
+            <a class="footer__link" href="./main.html">Главная</a>
+            <a class="footer__link" href="../pages/test.html"
+              >Профориентационный тест</a
+            >
+            <a class="footer__link" href="#">Результат теста</a>
+          </div>
+        </div>
       </div>
       <div class="title__text">
         <h1 class="title__title">Конструктор резюме</h1>
@@ -59,24 +72,22 @@
       <div class="dropdown__box">
         <p class="dropdown__box_text">Личная информация</p>
         <svg
+          class="icon"
           style="
-            display: flex;
+            display: block;
             width: 24px;
             height: 32px;
             align-self: center;
             padding-right: 100px;
           "
-          class="mySvg"
-          id="mySvg"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
         >
-          <use xlink:href="#Capa_1"></use>
+          <use xlink:href="#arrow-svg"></use>
         </svg>
       </div>
       <div class="dropdown__box">
         <p class="dropdown__box_text">Образование</p>
         <svg
+          class="icon"
           style="
             display: block;
             width: 24px;
@@ -84,17 +95,14 @@
             align-self: center;
             padding-right: 100px;
           "
-          class="mySvg"
-          id="mySvg"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
         >
-          <use xlink:href="#Capa_1"></use>
+          <use xlink:href="#arrow-svg"></use>
         </svg>
       </div>
       <div class="dropdown__box">
         <p class="dropdown__box_text">Опыт работы (практика)</p>
         <svg
+          class="icon"
           style="
             display: block;
             width: 24px;
@@ -102,17 +110,14 @@
             align-self: center;
             padding-right: 100px;
           "
-          class="mySvg"
-          id="mySvg"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
         >
-          <use xlink:href="#Capa_1"></use>
+          <use xlink:href="#arrow-svg"></use>
         </svg>
       </div>
       <div class="dropdown__box">
         <p class="dropdown__box_text">Навыки и качества</p>
         <svg
+          class="icon"
           style="
             display: block;
             width: 24px;
@@ -120,17 +125,14 @@
             align-self: center;
             padding-right: 100px;
           "
-          class="mySvg"
-          id="mySvg"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
         >
-          <use xlink:href="#Capa_1"></use>
+          <use xlink:href="#arrow-svg"></use>
         </svg>
       </div>
       <div class="dropdown__box">
         <p class="dropdown__box_text">Дополнительная информация</p>
         <svg
+          class="icon"
           style="
             display: block;
             width: 24px;
@@ -138,17 +140,25 @@
             align-self: center;
             padding-right: 100px;
           "
-          class="mySvg"
-          id="mySvg"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
         >
-          <use xlink:href="#Capa_1"></use>
+          <use xlink:href="#arrow-svg"></use>
         </svg>
       </div>
       <div class="dropdown__box">
         <p class="dropdown__box_text">Рекомендации</p>
         <svg
+          class="icon"
+          style="
+            display: block;
+            width: 24px;
+            height: 32px;
+            align-self: center;
+            padding-right: 100px;
+          "
+        >
+          <use xlink:href="#arrow-svg"></use>
+        </svg>
+        <!-- <svg
           style="
             display: block;
             width: 24px;
@@ -162,7 +172,7 @@
           xmlns:xlink="http://www.w3.org/1999/xlink"
         >
           <use xlink:href="#Capa_1"></use>
-        </svg>
+        </svg> -->
       </div>
     </div>
     <div class="footer center">
@@ -170,8 +180,10 @@
         <img class="footer__logo" src="../img/logo.png" alt="" />
         <div class="footer__link_box">
           <a class="footer__link" href="#">Результат теста</a>
-          <a class="footer__link" href="#">Конструктор резюме</a>
-          <a class="footer__link" href="#">Профориентационный тест</a>
+          <a class="footer__link" href="./main.html">Главная</a>
+          <a class="footer__link" href="../pages/test.html"
+            >Профориентационный тест</a
+          >
         </div>
       </div>
       <div class="footer__developer_box center">
@@ -207,6 +219,26 @@
     </svg> -->
 
     <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      style="position: absolute; width: 0; height: 0"
+      id="SVG_SPRITE_NODE"
+    >
+      <!-- Определение символа -->
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        fill="#FFFFFF"
+        viewBox="0 0 532.169 532.169"
+        id="arrow-svg"
+      >
+        <!-- Путь и другие атрибуты вашего пути -->
+        <path
+          d="M461.539,157.069L266.077,281.954L70.617,157.069c-21.359-13.641-49.75-7.393-63.391,13.966 c-13.647,21.365-7.393,49.743,13.966,63.392l220.179,140.674c7.534,4.816,16.126,7.222,24.712,7.222 c8.587,0,17.179-2.405,24.713-7.222l220.18-140.674c21.358-13.648,27.619-42.033,13.965-63.392 C511.282,149.67,482.903,143.434,461.539,157.069z"
+        />
+      </symbol>
+    </svg>
+
+    <!-- <svg
       style="
         display: flex;
         width: 24px;
@@ -231,6 +263,6 @@
           d="M461.539,157.069L266.077,281.954L70.617,157.069c-21.359-13.641-49.75-7.393-63.391,13.966 c-13.647,21.365-7.393,49.743,13.966,63.392l220.179,140.674c7.534,4.816,16.126,7.222,24.712,7.222 c8.587,0,17.179-2.405,24.713-7.222l220.18-140.674c21.358-13.648,27.619-42.033,13.965-63.392 C511.282,149.67,482.903,143.434,461.539,157.069z"
         />
       </g>
-    </svg>
+    </svg> -->
   </body>
 </html>
